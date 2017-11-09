@@ -28,6 +28,8 @@ docker rmi
 docker build --force-rm -t wuzimei/img_laoximen_web:1.0 ./
 docker run -d {image_id} {command}
 docker exec -it {image_id} /bin/bash
+# 文件夹拷贝
+docker cp /root/books web_laoximen_online:/root/
 ```
 
 ## file
