@@ -33,6 +33,12 @@ docker cp /root/books web_laoximen_online:/root/
 ```
 
 ## file
-#### 
+#### find并cp
 ```
+find . -name "*.txt" | xargs -i cp {} /tmp/des/
+```
+
+#### 文件夹下的文件数量
+```
+ls -l | grep "^-"| wc -l
 ```
