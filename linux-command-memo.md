@@ -38,6 +38,11 @@ docker cp /root/books web_laoximen_online:/root/
 find . -name "*.txt" | xargs -i cp {} /tmp/des/
 ```
 
+#### 找出size大于1G的文件
+```
+find / -type f -size +1G -exec du -sh {} \;
+```
+
 #### 文件夹下的文件数量
 ```
 ls -l | grep "^-"| wc -l
